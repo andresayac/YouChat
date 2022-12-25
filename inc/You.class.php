@@ -12,8 +12,9 @@ class You
     {
         $browserFactory = new BrowserFactory();
         $this->browser = $browserFactory->createBrowser([
-            'headless' => true, // disable headless mode
+            'headless' => false, // disable headless mode
             'keepAlive' => true,
+            'noSandbox' => true,
         ]);
     }
 
@@ -25,9 +26,10 @@ class You
         // creates a new page and navigate to an URL
         $page =  $this->browser->createPage();
         $page->navigate($query)->waitForNavigation(Page::NETWORK_IDLE);
+      
 
         // get data
-        $body = $page->evaluate('document.querySelector("body > pre").innerHTML')->getReturnValue();
+        $body = $page->evaluate('document.querySelector("body").innerHTML')->getReturnValue();
         return $body;
     }
 

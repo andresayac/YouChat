@@ -12,7 +12,7 @@ class You
     {
         $browserFactory = new BrowserFactory();
         $this->browser = $browserFactory->createBrowser([
-            'headless' => false, // disable headless mode
+            'headless' => true, // disable headless mode
             'keepAlive' => true,
         ]);
     }

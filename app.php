@@ -8,4 +8,6 @@ $you = new You();
 
 $question_answer = $you->askQuestion("What is the meaning of life?", "42");
 
-$you->process_data($question_answer);
+$data_processed = $you->process_data($question_answer);
+
+var_dump($data_processed);

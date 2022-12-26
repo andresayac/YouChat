@@ -14,6 +14,7 @@ class You
         $this->browser = $browserFactory->createBrowser([
             'headless' => true, // disable headless mode
             'keepAlive' => true,
+            'noSandbox' => true,
             'userAgent' => 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/20100101 Firefox/5.0'
         ]);
     }

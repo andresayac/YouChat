@@ -4,6 +4,7 @@ Easy way to ask YouChat using php, the php-chrome library is used to skip cloufr
 ## Deploy
 
 1. Clone project `https://github.com/andresayac/YouChat.git`
-2. Setup dependences `composer install`
-3. Example Used `php app.py`
+2. Enter cloned directory `cd YouChat`
+3. Setup dependences `composer install`
+4. Example Used `php app.py`
 

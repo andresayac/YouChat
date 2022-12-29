@@ -9,5 +9,5 @@ Requires PHP 7.3-8.2 and a chrome/chromium 65+ executable.
 1. Clone project `https://github.com/andresayac/YouChat.git`
 2. Enter cloned directory `cd YouChat`
 3. Setup dependences `composer install`
-4. Example Used `php app.py`
+4. Example Used `php app.php`
 
